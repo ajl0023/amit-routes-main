@@ -1,4 +1,9 @@
+[build]
+  publish = "dist/"
+  functions = "scripts/netlify/api/"
+
 [[redirects]]
+  # SSR and SPA
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/ssr"
   status = 200
