@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@sveltech/ssr": "0.0.9"
+   
   }
 }

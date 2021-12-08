@@ -21,7 +21,8 @@
     "svelte-preprocess": "^4.7.0",
     "vite": "^2.0.5",
     "@use-gesture/vanilla": "^10.2.2",
-    "gsap": "^3.8.0"
+    "gsap": "^3.8.0",
+    "@sveltech/routify": "^1.4.7"
   },
   "dependencies": {
     "prettier": "^2.5.1",
