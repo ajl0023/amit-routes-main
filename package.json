@@ -24,6 +24,8 @@
     "gsap": "^3.8.0"
   },
   "dependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.0",
     "sass": "^1.44.0"
   }
 }

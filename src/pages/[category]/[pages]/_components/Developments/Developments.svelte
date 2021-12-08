@@ -1,7 +1,7 @@
 <!-- routify:options param-is-page=true -->
 <script>
   import { params } from "@roxi/routify";
-  import { pageLayoutMaster } from "../../../../pageLayout";
+  import { pageLayoutMaster } from "../../../../../pageLayout";
 
   const pageDetails = pageLayoutMaster["pages"]["byTitle"][$params.pages];
   function reDirect(e) {

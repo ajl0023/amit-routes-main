@@ -1,0 +1,1 @@
+const t=(t,a,n,r)=>{const s=o(t,a,n/2,0),c=o(t,a,n/2,r);return Math.min(s,c)===s?"top":"bottom"},o=(t,o,a,n)=>{const r=t-a,s=o-n;return r*r+s*s},a=(t,o,a,n)=>Math.sqrt(Math.pow(o-t,2)+Math.pow(n-a,2));export{t as c,a as d};

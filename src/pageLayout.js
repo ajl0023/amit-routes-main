@@ -9,11 +9,11 @@ export const pageLayoutMaster = {
           "https://res.cloudinary.com/dt4xntymn/video/upload/v1638227066/mainSite/homeVideoAnimation/SD_Bar_1_vbyidn.mp4",
         pages: [
           {
-            title: "maliview",
+            key: "maliview",
             labels: [Array(8).fill("maliview")],
           },
           {
-            title: "aviator",
+            key: "aviator",
             labels: [Array(8).fill("aviator")],
           },
         ],

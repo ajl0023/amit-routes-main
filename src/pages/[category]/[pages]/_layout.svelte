@@ -15,15 +15,51 @@
   }
   let Component;
   const imports = {
-    'private-homes':async()=>{
-   return import('./_components/ArchiGallery/ArchiGallery.svelte')
-    }
-  }
+    "private-homes": async () => {
+      return import("./_components/ArchiGallery/ArchiGallery.svelte");
+    },
+    "multi-units": async () => {
+      return import("./_components/ArchiGallery/ArchiGallery.svelte");
+    },
+    concept: async () => {
+      return import("./_components/ArchiGallery/ArchiGallery.svelte");
+    },
+    Art: async () => {
+      return import("./_components/Masonry/Masonry.svelte");
+    },
+    "meet-amit-apel": async () => {
+      return import("./_components/MeetAmitApel/MeetAmitApel.svelte");
+    },
+    "meet-the-team": async () => {
+      return import("./_components/MeetTheTeam/MeetTheTeam.svelte");
+    },
+    press: async () => {
+      return import("./_components/Press/Press.svelte");
+    },
+    contact: async () => {
+      return import("./_components/Contact/Contact.svelte");
+    },
+    furniture: async () => {
+      return import("./_components/Masonry/Masonry.svelte");
+    },
+    "malibu-rebuild": async () => {
+      return import("./_components/MalibuRebuild/MalibuRebuild.svelte");
+    },
+    "what-we-do": async () => {
+      return import("./_components/WhatWeDo/WhatWeDo.svelte");
+    },
+    aviator: async () => {
+      return import("./_components/Developments/Developments.svelte");
+    },
+    maliview: async () => {
+      return import("./_components/Developments/Developments.svelte");
+    },
+  };
   const loadComponent = async (title) => {
     marqueeHandlerStore.setPage(title);
     let comp = pageLayoutMaster["pages"]["byTitle"][title].component;
-    
-    Component = (await imports[title]()).default;console.log(Component)
+
+    Component = (await imports[title]()).default;
   };
   $: page = $params.pages;
   $: loadComponent(page);
